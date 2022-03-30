@@ -13,7 +13,7 @@ namespace ParkingSpots.Data
         {
         }
         public DbSet<User> Client { get; set; }
-        public DbSet<ParkStop> ParkStop { get; set; }
-        public DbSet<ParkingSpots.Data.Orders> Order { get; set; }
+        public DbSet<ParkSpot> ParkSpots { get; set; }
+        public DbSet<ParkingSpots.Data.Order> Order { get; set; }
     }
 }

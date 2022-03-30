@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\visual studio projects\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj": {}
+    "C:\\Users\\helld\\OneDrive\\Работен плот\\ParkingSpots\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj": {}
   },
   "projects": {
-    "F:\\visual studio projects\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj": {
+    "C:\\Users\\helld\\OneDrive\\Работен плот\\ParkingSpots\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\visual studio projects\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj",
+        "projectUniqueName": "C:\\Users\\helld\\OneDrive\\Работен плот\\ParkingSpots\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj",
         "projectName": "ParkingSpots",
-        "projectPath": "F:\\visual studio projects\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj",
+        "projectPath": "C:\\Users\\helld\\OneDrive\\Работен плот\\ParkingSpots\\ParkingSpots\\ParkingSpots\\ParkingSpots.csproj",
         "packagesPath": "C:\\Users\\helld\\.nuget\\packages\\",
-        "outputPath": "F:\\visual studio projects\\ParkingSpots\\ParkingSpots\\obj\\",
+        "outputPath": "C:\\Users\\helld\\OneDrive\\Работен плот\\ParkingSpots\\ParkingSpots\\ParkingSpots\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\helld\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,11 +54,17 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[5.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

@@ -8,6 +8,6 @@ namespace ParkingSpots.Data
         public string Name { get; set; }
         public string LastName { get; set; }
         public Roles Role { get; set; }
-        public ICollection<Orders> Orders { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }
