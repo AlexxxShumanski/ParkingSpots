@@ -11,8 +11,8 @@ namespace ParkingSpots.Data
         public string Registration {get;  set;}
         public string IdUser { get; set; }
         public User User { get; set; }
-        public int DataParking { get; set; }
-        public int DataLeave { get; set; }
+        public DateTime DataParking { get; set; }
+        public DateTime DataLeave { get; set; }
         public DateTime OrderOn { get; set; }
     }
 }

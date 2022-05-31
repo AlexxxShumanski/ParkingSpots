@@ -10,7 +10,7 @@ using ParkingSpots.Data;
 namespace ParkingSpots.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220330163519_InitialMigration")]
+    [Migration("20220530204744_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -163,11 +163,11 @@ namespace ParkingSpots.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("DataLeave")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataLeave")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("DataParking")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataParking")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("IdParkSpot")
                         .HasColumnType("int");
@@ -212,17 +212,11 @@ namespace ParkingSpots.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("Disabled")
-                        .HasColumnType("bit");
-
                     b.Property<int?>("ParkSpotId")
                         .HasColumnType("int");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<int>("Registration")
-                        .HasColumnType("int");
 
                     b.Property<string>("Size")
                         .HasColumnType("nvarchar(max)");

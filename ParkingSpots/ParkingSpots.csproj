@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-ParkingSpots-545F95EB-F22F-4AFF-ADD9-2131A4843B73</UserSecretsId>
+    <UserSecretsId> </UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

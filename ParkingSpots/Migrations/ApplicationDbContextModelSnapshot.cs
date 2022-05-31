@@ -161,11 +161,11 @@ namespace ParkingSpots.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("DataLeave")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataLeave")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("DataParking")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataParking")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("IdParkSpot")
                         .HasColumnType("int");
@@ -210,17 +210,11 @@ namespace ParkingSpots.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("Disabled")
-                        .HasColumnType("bit");
-
                     b.Property<int?>("ParkSpotId")
                         .HasColumnType("int");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<int>("Registration")
-                        .HasColumnType("int");
 
                     b.Property<string>("Size")
                         .HasColumnType("nvarchar(max)");

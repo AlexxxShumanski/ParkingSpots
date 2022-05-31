@@ -10,7 +10,6 @@ namespace ParkingSpots.Data
         public string Size { get; set; }
         public bool Status { get; set; }
         public double Price { get; set; }
-        public string Registration { get; set; }
         public DateTime Date { get; set; }
         public ICollection<ParkSpot> ParkSpots { get; set; }
     }

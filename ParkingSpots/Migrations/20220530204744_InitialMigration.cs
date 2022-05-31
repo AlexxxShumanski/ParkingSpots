@@ -55,12 +55,10 @@ namespace ParkingSpots.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Disabled = table.Column<bool>(type: "bit", nullable: false),
                     Category = table.Column<int>(type: "int", nullable: false),
                     Size = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Status = table.Column<bool>(type: "bit", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
-                    Registration = table.Column<int>(type: "int", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ParkSpotId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -193,8 +191,8 @@ namespace ParkingSpots.Migrations
                     Registration = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdUser = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    DataParking = table.Column<int>(type: "int", nullable: false),
-                    DataLeave = table.Column<int>(type: "int", nullable: false),
+                    DataParking = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataLeave = table.Column<DateTime>(type: "datetime2", nullable: false),
                     OrderOn = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
